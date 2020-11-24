@@ -1,0 +1,51 @@
+﻿<Page x:Class="Dashboard1.Dashboard.Dashboardndex"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dashboard1.Dashboard"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1000"
+      Title="Dashboardndex">
+
+    <Grid>
+        <Grid Name="dashboardinfo" Visibility="Visible" Margin="0 0 0 0">
+
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#2a2a2b" Offset="1"/>
+                    <GradientStop Color="#2a2a2b"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0 50 0 0">
+                <Label Foreground="White" HorizontalAlignment="Center" FontSize="25" BorderBrush="White">
+                    WELCOME TO AUTOM8TIC
+                </Label>
+                <TextBlock Margin="20 0 20 0" TextWrapping="WrapWithOverflow" Foreground="#fff" HorizontalAlignment="Center" FontSize="14">
+                  Welcome Beta Users! We are so thrilled you are here! Please get acquainted  with our software before the next release.
+                </TextBlock>
+                <Image Source="/logo.png" Width="200" Margin="0 20 0 0 "></Image>
+                
+
+                <!--<TextBlock Margin="20 0 20 0" TextWrapping="WrapWithOverflow" Foreground="#6070BD" HorizontalAlignment="Center" FontSize="14">
+                  id metus ultricies placerat. Donec eget urna nibh. Curabitur in tellus massa. Nulla facilisi. Nulla venenatis lectus eget dui fringilla, ac tincidunt sem scelerisque. Nullam sit amet faucibus leo. Duis eros tellus, tempor nec pharetra sit amet, euismod vel tortor. Morbi condimentum leo quis augue luctus accumsan
+                </TextBlock>
+                <Label Foreground="White" HorizontalAlignment="Center" FontSize="20" BorderBrush="White">
+                    HAVE A FEATURE REQUEST?
+                </Label>
+                <TextBlock Margin="20 0 20 0" TextWrapping="WrapWithOverflow" Foreground="#6070BD" HorizontalAlignment="Center" FontSize="14">
+                    Nam ultrices diam tortor, a gravida libero lacinia vitae. Mauris sagittis lacus id metus ultricies placerat. Donec eget urna nibh. Curabitur in tellus massa. Nulla facilisi. Nulla venenatis lectus eget dui fringilla, ac tincidunt sem scelerisque. Nullam sit amet faucibus leo. Duis eros tellus, tempor nec pharetra sit amet, euismod vel tortor.
+                </TextBlock>-->
+            </StackPanel>
+
+        </Grid>
+
+
+    </Grid>
+</Page>

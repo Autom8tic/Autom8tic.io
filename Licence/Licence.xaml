@@ -1,0 +1,47 @@
+﻿<Window x:Class="Dashboard1.Licence.Licence"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dashboard1.Licence"
+        mc:Ignorable="d"
+        Title="Validate Key to use Autom8Tic" Height="250" Width="600">
+    <Grid>
+        <!--Create Release Start-->
+
+        <!--Create Profile-->
+        <Grid Name="licenceinfo" Grid.Column="2" Grid.Row="1" Margin="0 00 0 0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#2a2a2b" Offset="1"/>
+                    <GradientStop Color="#2a2a2b"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <WrapPanel Orientation="Vertical" Margin="0 10 0 0" HorizontalAlignment="Center">
+                <Image Source="/logo.png" Width="100"></Image>
+
+            </WrapPanel>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+                <WrapPanel Orientation="Horizontal">
+                    
+                    <StackPanel Margin="20 -20 10 0">
+                        <Label Foreground="#ccc">Key</Label>
+                        <TextBox Foreground="#ccc" Name="key" BorderBrush="#ccc" Width="250"></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="20 0 10 0">
+                        <Button Click="btn_Validate_Click" Name="btn_Validate" Width="150" HorizontalAlignment="Right" FontSize="13"  BorderBrush="DarkSlateGray" Background="DarkSlateGray" >VALIDATE</Button>
+                    </StackPanel>
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
+        <!--Create Release Ends-->
+       
+    </Grid>
+</Window>
